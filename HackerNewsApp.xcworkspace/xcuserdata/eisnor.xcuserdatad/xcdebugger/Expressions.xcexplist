@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "static HttpRequest.makeHttpGetRequest(String, onResult : (Int, JSON) -&gt; (), onError : (Int, NSError) -&gt; ()) -&gt; ():HttpRequest.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "NSURL(string: path)">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "static HackerNewsItemSerializer.parse(JSON) -&gt; HackerNewsItem:HackerNewsItemSerializer.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "data[&quot;deleted&quot;].bool">
+            </PersistentString>
+            <PersistentString
+               value = "data[&quot;deleted&quot;]">
+            </PersistentString>
+            <PersistentString
+               value = "data[&quot;url&quot;].string">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "StoryDetailController.viewDidLoad() -&gt; ():StoryDetailController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.story">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "TopStoriesViewController.tableView(UITableView, numberOfRowsInSection : Int) -&gt; Int:TopStoriesViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.topStories">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "HackerNewsAPI.fetchItemById(Int, itemResult : (HackerNewsItem?) -&gt; ()) -&gt; ():HackerNewsAPI.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "String(format: itemUrlResource, arguments: [id])">
+            </PersistentString>
+            <PersistentString
+               value = "itemUrl">
+            </PersistentString>
+            <PersistentString
+               value = "String(format: itemUrl, arguments: [id])">
+            </PersistentString>
+            <PersistentString
+               value = "itemUrlResource">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "TopStoriesViewController.tableView(UITableView, cellForRowAtIndexPath : NSIndexPath) -&gt; UITableViewCell:TopStoriesViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "DateUtil.timeAgoSinceDate(story.time, numericDates: true)">
+            </PersistentString>
+            <PersistentString
+               value = "story.numberOfDescendants">
+            </PersistentString>
+            <PersistentString
+               value = "story.kids">
+            </PersistentString>
+            <PersistentString
+               value = "story.by">
+            </PersistentString>
+            <PersistentString
+               value = "story.kids.count">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "static HttpRequest.makeHttpGetRequest(String, onResult : (Int, JSON) -&gt; (), onError : (Int?, NSError) -&gt; ()) -&gt; ():HttpRequest.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "parseHttpsURL(path)">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "TopStoriesViewController.(viewDidLoad(TopStoriesViewController) -&gt; () -&gt; ()).(closure #1).(closure #1):TopStoriesViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "self.tableView.numberOfRowsInSection(0)">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "HackerNewsAPI.(fetchEachTopStory(HackerNewsAPI) -&gt; ((HackerNewsItem?) -&gt; ()) -&gt; ()).(closure #1).(closure #1):HackerNewsAPI.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "itemsFetched">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+      <ContextState
+         contextName = "HackerNewsAPI.(fetchItemById(HackerNewsAPI) -&gt; (Int, itemResult : (HackerNewsItem?) -&gt; ()) -&gt; ()).(closure #1):HackerNewsAPI.swift">
+      </ContextState>
+      <ContextState
+         contextName = "TopStoriesViewController.prepareForSegue(UIStoryboardSegue, sender : AnyObject?) -&gt; ():TopStoriesViewController.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "sender as! TopStoryCell">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

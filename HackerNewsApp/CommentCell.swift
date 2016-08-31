@@ -12,4 +12,5 @@ class CommentCell: UITableViewCell {
     
     @IBOutlet weak var postedBy: UILabel!
     @IBOutlet weak var commentText: UITextView!
+    
 }

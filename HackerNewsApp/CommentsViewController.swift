@@ -20,6 +20,10 @@ class CommentsViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.tableView.rowHeight = UITableViewAutomaticDimension
+        self.tableView.estimatedRowHeight = 140
+        self.edgesForExtendedLayout = .None
+        
         self.story = (self.parentViewController as! StoryDetailController).story
         
         if (self.comments == nil) {

@@ -18,6 +18,10 @@ class StoryDetailController: UITabBarController {
         self.title = self.story?.title
         self.navigationItem.backBarButtonItem = UIBarButtonItem(title:"", style:.Plain, target:nil, action:nil)
         self.tabBar.translucent = false
+        
+        if (self.story?.url == nil) {
+            self.tabBar.hidden = true
+        }
     }
     
 }

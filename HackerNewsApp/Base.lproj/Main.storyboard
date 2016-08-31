@@ -75,10 +75,10 @@
         <!--Article-->
         <scene sceneID="dJg-qw-DXx">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="gJy-cN-q5q" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="Iut-nK-9tj" customClass="SafariNavigationViewController" customModule="HackerNewsApp" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Article" image="ArticleTab" id="fpg-2J-Aev"/>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gJy-cN-q5q" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="753" y="1224"/>
         </scene>
@@ -194,8 +194,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="ArticleTab" width="50" height="50"/>
-        <image name="CommentsTab" width="50" height="50"/>
+        <image name="ArticleTab" width="25" height="25"/>
+        <image name="CommentsTab" width="25" height="25"/>
     </resources>
     <color key="tintColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
 </document>

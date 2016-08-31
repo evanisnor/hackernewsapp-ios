@@ -116,19 +116,10 @@
                                 <rect key="frame" x="0.0" y="92" width="600" height="140"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="yUw-jB-fqu" id="bjl-gK-vQh">
-                                    <rect key="frame" x="0.0" y="0.0" width="600" height="139.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="140"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="username  |  4 hours ago" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="68r-p3-W5e">
-                                            <rect key="frame" x="8" y="8" width="584" height="21"/>
-                                            <constraints>
-                                                <constraint firstAttribute="height" constant="21" id="kcU-vs-q0H"/>
-                                            </constraints>
-                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
-                                            <nil key="highlightedColor"/>
-                                        </label>
-                                        <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" misplaced="YES" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" delaysContentTouches="NO" bouncesZoom="NO" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gLb-qf-Jae">
+                                        <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" delaysContentTouches="NO" bouncesZoom="NO" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gLb-qf-Jae">
                                             <rect key="frame" x="8" y="28" width="584" height="121"/>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <attributedString key="attributedText">
@@ -136,23 +127,39 @@
                                                     <string key="content">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
                                                     <attributes>
                                                         <font key="NSFont" size="14" name="HelveticaNeue"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
                                                     </attributes>
                                                 </fragment>
                                             </attributedString>
                                             <textInputTraits key="textInputTraits" autocorrectionType="no" spellCheckingType="no"/>
                                             <dataDetectorType key="dataDetectorTypes" link="YES"/>
                                         </textView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="username  |  4 hours ago" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="68r-p3-W5e" customClass="InsetLabel" customModule="HackerNewsApp">
+                                            <rect key="frame" x="8" y="8" width="584" height="21"/>
+                                            <accessibility key="accessibilityConfiguration">
+                                                <accessibilityTraits key="traits" staticText="YES" notEnabled="YES"/>
+                                            </accessibility>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="21" id="kcU-vs-q0H"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                            <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
                                     </subviews>
                                     <constraints>
-                                        <constraint firstItem="gLb-qf-Jae" firstAttribute="trailing" secondItem="68r-p3-W5e" secondAttribute="trailing" id="8Si-fQ-hzz"/>
-                                        <constraint firstItem="gLb-qf-Jae" firstAttribute="trailing" secondItem="bjl-gK-vQh" secondAttribute="trailingMargin" id="FDE-Dz-4GI"/>
+                                        <constraint firstItem="gLb-qf-Jae" firstAttribute="trailing" secondItem="68r-p3-W5e" secondAttribute="trailing" id="0zV-ku-rTo"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="gLb-qf-Jae" secondAttribute="bottom" constant="-17.5" id="8mi-oc-n4v"/>
+                                        <constraint firstItem="gLb-qf-Jae" firstAttribute="leading" secondItem="68r-p3-W5e" secondAttribute="leading" id="P38-dg-bVp"/>
+                                        <constraint firstItem="gLb-qf-Jae" firstAttribute="trailing" secondItem="bjl-gK-vQh" secondAttribute="trailingMargin" id="RI2-1H-3sc"/>
                                         <constraint firstItem="68r-p3-W5e" firstAttribute="top" secondItem="bjl-gK-vQh" secondAttribute="topMargin" id="Sl0-oY-V9U"/>
-                                        <constraint firstAttribute="bottomMargin" secondItem="gLb-qf-Jae" secondAttribute="bottom" constant="-0.5" id="UU6-MY-8Ip"/>
-                                        <constraint firstItem="gLb-qf-Jae" firstAttribute="leading" secondItem="68r-p3-W5e" secondAttribute="leading" id="YMB-Mb-IXh"/>
-                                        <constraint firstItem="gLb-qf-Jae" firstAttribute="leading" secondItem="bjl-gK-vQh" secondAttribute="leadingMargin" id="qvW-T7-vFR"/>
-                                        <constraint firstItem="gLb-qf-Jae" firstAttribute="top" secondItem="bjl-gK-vQh" secondAttribute="topMargin" constant="20" id="ur8-9e-lgp"/>
+                                        <constraint firstItem="gLb-qf-Jae" firstAttribute="leading" secondItem="bjl-gK-vQh" secondAttribute="leadingMargin" id="dKa-zm-yU8"/>
+                                        <constraint firstItem="gLb-qf-Jae" firstAttribute="top" secondItem="bjl-gK-vQh" secondAttribute="topMargin" constant="20" id="vFF-N2-lCt"/>
                                     </constraints>
                                 </tableViewCellContentView>
+                                <accessibility key="accessibilityConfiguration">
+                                    <accessibilityTraits key="traits" notEnabled="YES"/>
+                                </accessibility>
                                 <connections>
                                     <outlet property="commentText" destination="gLb-qf-Jae" id="6IS-qz-O4b"/>
                                     <outlet property="postedBy" destination="68r-p3-W5e" id="bRi-Tn-oPa"/>

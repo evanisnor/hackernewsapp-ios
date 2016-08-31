@@ -88,6 +88,7 @@ class CommentsViewController: UITableViewController {
                 (substring, substringRange, _, _) in
                 attributedComment.addAttribute(NSFontAttributeName, value: UIFont.systemFontOfSize(12), range: substringRange)
                 cell.commentText!.attributedText = attributedComment
+                cell.commentText!.textContainerInset = UIEdgeInsetsMake(0, 0, 0, 0)
             })
         }
         catch let error as NSError {

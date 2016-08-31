@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		090AF0391D765A4F00772086 /* InsetLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 090AF0381D765A4F00772086 /* InsetLabel.swift */; };
 		093FE72F1D75C1B200BFCF91 /* TopStoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 093FE72E1D75C1B200BFCF91 /* TopStoriesViewController.swift */; };
 		093FE7311D75CF3100BFCF91 /* TopStoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 093FE7301D75CF3100BFCF91 /* TopStoryCell.swift */; };
 		093FE7341D75F6CF00BFCF91 /* DateUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 093FE7331D75F6CF00BFCF91 /* DateUtil.swift */; };
@@ -46,6 +47,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		090AF0381D765A4F00772086 /* InsetLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InsetLabel.swift; sourceTree = "<group>"; };
 		093FE72E1D75C1B200BFCF91 /* TopStoriesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopStoriesViewController.swift; sourceTree = "<group>"; };
 		093FE7301D75CF3100BFCF91 /* TopStoryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopStoryCell.swift; sourceTree = "<group>"; };
 		093FE7331D75F6CF00BFCF91 /* DateUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateUtil.swift; sourceTree = "<group>"; };
@@ -101,6 +103,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		090AF0371D765A3900772086 /* UIViews */ = {
+			isa = PBXGroup;
+			children = (
+				090AF0381D765A4F00772086 /* InsetLabel.swift */,
+			);
+			name = UIViews;
+			sourceTree = "<group>";
+		};
 		093FE72A1D75C09D00BFCF91 /* UIController */ = {
 			isa = PBXGroup;
 			children = (
@@ -155,6 +165,7 @@
 		09980D6A1D7467C800A11065 /* HackerNewsApp */ = {
 			isa = PBXGroup;
 			children = (
+				090AF0371D765A3900772086 /* UIViews */,
 				093FE7321D75F6BD00BFCF91 /* Util */,
 				093FE72B1D75C0AC00BFCF91 /* HackerNewsAPI */,
 				093FE72A1D75C09D00BFCF91 /* UIController */,
@@ -410,6 +421,7 @@
 				093FE7341D75F6CF00BFCF91 /* DateUtil.swift in Sources */,
 				09980D6F1D7467C800A11065 /* HackerNewsApp.xcdatamodeld in Sources */,
 				093FE7311D75CF3100BFCF91 /* TopStoryCell.swift in Sources */,
+				090AF0391D765A4F00772086 /* InsetLabel.swift in Sources */,
 				09980D6C1D7467C800A11065 /* AppDelegate.swift in Sources */,
 				09DF901A1D74ACDE007A8B3E /* HttpRequest.swift in Sources */,
 				093FE72F1D75C1B200BFCF91 /* TopStoriesViewController.swift in Sources */,

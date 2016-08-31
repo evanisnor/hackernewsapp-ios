@@ -8,6 +8,7 @@
 
 import UIKit
 
+
 class CommentsViewController: UITableViewController {
 
     var story: HackerNewsItem?
@@ -32,7 +33,9 @@ class CommentsViewController: UITableViewController {
     func fetchComments () {
         HackerNewsAPI().fetchEachKid(self.story!, kidResult: { kid in
             dispatch_async(dispatch_get_main_queue(),{
-                self.appendCommentToTable(kid!)
+                if (kid?.type == HackerNewsItemType.Comment) {
+                    self.appendCommentToTable(kid!)
+                }
             })
         })
     }
@@ -47,17 +50,6 @@ class CommentsViewController: UITableViewController {
         
     }
 
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-    
     // MARK: - Table view data source
     
     override func tableView(tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

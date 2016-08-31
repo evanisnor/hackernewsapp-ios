@@ -120,7 +120,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" bounces="NO" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" delaysContentTouches="NO" bouncesZoom="NO" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gLb-qf-Jae">
-                                            <rect key="frame" x="8" y="28" width="584" height="121"/>
+                                            <rect key="frame" x="8" y="28" width="584" height="104"/>
                                             <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                             <attributedString key="attributedText">
                                                 <fragment>
@@ -149,7 +149,7 @@
                                     </subviews>
                                     <constraints>
                                         <constraint firstItem="gLb-qf-Jae" firstAttribute="trailing" secondItem="68r-p3-W5e" secondAttribute="trailing" id="0zV-ku-rTo"/>
-                                        <constraint firstAttribute="bottomMargin" secondItem="gLb-qf-Jae" secondAttribute="bottom" constant="-17.5" id="8mi-oc-n4v"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="gLb-qf-Jae" secondAttribute="bottom" id="8mi-oc-n4v"/>
                                         <constraint firstItem="gLb-qf-Jae" firstAttribute="leading" secondItem="68r-p3-W5e" secondAttribute="leading" id="P38-dg-bVp"/>
                                         <constraint firstItem="gLb-qf-Jae" firstAttribute="trailing" secondItem="bjl-gK-vQh" secondAttribute="trailingMargin" id="RI2-1H-3sc"/>
                                         <constraint firstItem="68r-p3-W5e" firstAttribute="top" secondItem="bjl-gK-vQh" secondAttribute="topMargin" id="Sl0-oY-V9U"/>

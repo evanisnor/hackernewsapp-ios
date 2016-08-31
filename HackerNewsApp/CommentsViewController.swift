@@ -13,11 +13,6 @@ class CommentsViewController: UITableViewController {
     var story: HackerNewsItem?
     var comments: [HackerNewsItem]?
     
-    let attributedOptions : [String: AnyObject] = [
-        NSDocumentTypeDocumentAttribute: NSHTMLTextDocumentType,
-        NSCharacterEncodingDocumentAttribute: NSUTF8StringEncoding
-    ]
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.tableView.rowHeight = UITableViewAutomaticDimension
@@ -72,29 +67,11 @@ class CommentsViewController: UITableViewController {
     override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCellWithIdentifier("CommentCell") as! CommentCell
         let comment = (self.comments?[indexPath.row])!
-        let content = comment.text ?? "Comment not found" as NSString
         
         cell.postedBy!.text = String(format: "%@  |  %@",
             comment.by ?? "unknown",
             DateUtil.timeAgoSinceDate(comment.time, numericDates: true))
-        
-        do {
-            let attributedComment = try NSMutableAttributedString(
-                data: content.dataUsingEncoding(NSUTF8StringEncoding)!,
-                options: attributedOptions,
-                documentAttributes: nil)
-            
-            content.enumerateSubstringsInRange(NSMakeRange(0, attributedComment.length), options: .ByWords, usingBlock: {
-                (substring, substringRange, _, _) in
-                attributedComment.addAttribute(NSFontAttributeName, value: UIFont.systemFontOfSize(12), range: substringRange)
-                cell.commentText!.attributedText = attributedComment
-                cell.commentText!.textContainerInset = UIEdgeInsetsMake(0, 0, 0, 0)
-            })
-        }
-        catch let error as NSError {
-            print(error)
-        }
-
+        cell.setAttributedHtmlText(comment.text ?? "Comment not found")
         return cell
     }
 

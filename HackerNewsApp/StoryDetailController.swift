@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SafariServices
 
 class StoryDetailController: UITabBarController {
     
@@ -16,16 +17,7 @@ class StoryDetailController: UITabBarController {
         super.viewDidLoad()
         self.title = self.story?.title
         self.navigationItem.backBarButtonItem = UIBarButtonItem(title:"", style:.Plain, target:nil, action:nil)
+        self.tabBar.translucent = false
     }
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
-    }
-    */
-
+    
 }

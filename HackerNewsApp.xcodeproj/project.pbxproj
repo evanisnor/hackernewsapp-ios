@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		090AF0391D765A4F00772086 /* InsetLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 090AF0381D765A4F00772086 /* InsetLabel.swift */; };
+		090AF03D1D76725300772086 /* SafariNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 090AF03C1D76725300772086 /* SafariNavigationViewController.swift */; };
 		093FE72F1D75C1B200BFCF91 /* TopStoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 093FE72E1D75C1B200BFCF91 /* TopStoriesViewController.swift */; };
 		093FE7311D75CF3100BFCF91 /* TopStoryCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 093FE7301D75CF3100BFCF91 /* TopStoryCell.swift */; };
 		093FE7341D75F6CF00BFCF91 /* DateUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = 093FE7331D75F6CF00BFCF91 /* DateUtil.swift */; };
@@ -48,6 +49,7 @@
 
 /* Begin PBXFileReference section */
 		090AF0381D765A4F00772086 /* InsetLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InsetLabel.swift; sourceTree = "<group>"; };
+		090AF03C1D76725300772086 /* SafariNavigationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SafariNavigationViewController.swift; sourceTree = "<group>"; };
 		093FE72E1D75C1B200BFCF91 /* TopStoriesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopStoriesViewController.swift; sourceTree = "<group>"; };
 		093FE7301D75CF3100BFCF91 /* TopStoryCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopStoryCell.swift; sourceTree = "<group>"; };
 		093FE7331D75F6CF00BFCF91 /* DateUtil.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DateUtil.swift; sourceTree = "<group>"; };
@@ -106,7 +108,9 @@
 		090AF0371D765A3900772086 /* UIViews */ = {
 			isa = PBXGroup;
 			children = (
+				093FE7391D760DBC00BFCF91 /* CommentCell.swift */,
 				090AF0381D765A4F00772086 /* InsetLabel.swift */,
+				093FE7301D75CF3100BFCF91 /* TopStoryCell.swift */,
 			);
 			name = UIViews;
 			sourceTree = "<group>";
@@ -115,10 +119,9 @@
 			isa = PBXGroup;
 			children = (
 				093FE72E1D75C1B200BFCF91 /* TopStoriesViewController.swift */,
-				093FE7301D75CF3100BFCF91 /* TopStoryCell.swift */,
 				093FE7351D75F81500BFCF91 /* StoryDetailController.swift */,
 				093FE7371D760A9000BFCF91 /* CommentsViewController.swift */,
-				093FE7391D760DBC00BFCF91 /* CommentCell.swift */,
+				090AF03C1D76725300772086 /* SafariNavigationViewController.swift */,
 			);
 			name = UIController;
 			sourceTree = "<group>";
@@ -417,6 +420,7 @@
 			files = (
 				093FE73A1D760DBC00BFCF91 /* CommentCell.swift in Sources */,
 				093FE7361D75F81500BFCF91 /* StoryDetailController.swift in Sources */,
+				090AF03D1D76725300772086 /* SafariNavigationViewController.swift in Sources */,
 				09DF900D1D746EB3007A8B3E /* HackerNewsAPI.swift in Sources */,
 				093FE7341D75F6CF00BFCF91 /* DateUtil.swift in Sources */,
 				09980D6F1D7467C800A11065 /* HackerNewsApp.xcdatamodeld in Sources */,
